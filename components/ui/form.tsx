@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { FormProvider, useFormContext } from 'react-hook-form'
-import { Input, Select,Textarea } from "@/components/ui/"
+import { Input, Select,Textarea } from "@components/ui/"
 
 function Form({ children, methods, onSubmit, ...props }) {
   return (

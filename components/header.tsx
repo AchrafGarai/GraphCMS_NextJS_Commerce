@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import { useCart } from 'react-use-cart'
 
-import { formatCurrencyValue } from '@/utils/format-currency-value'
-import GraphCMSSVG from '@/svgs/graphcms'
-import  ShoppingCart  from '@/icons/shopping-cart'
-import { useSettingsContext } from '@/context/settings'
+import { formatCurrencyValue } from '@utils/format-currency-value'
+import GraphCMSSVG from '@svgs/graphcms'
+import  ShoppingCart  from '@icons/shopping-cart'
+import { useSettingsContext } from '@context/settings'
 
 function Header({ pages = [] }) {
   const { cartTotal } = useCart()

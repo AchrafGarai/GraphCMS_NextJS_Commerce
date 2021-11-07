@@ -3,9 +3,9 @@ import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 
-import Button from '@/ui/button'
-import Form from '@/ui/form'
-import { ProductReviewsQuery } from '@/graphql/queries/reviews'
+import Button from '@ui/button'
+import Form from '@ui/form'
+import { ProductReviewsQuery } from '@graphql/queries/reviews'
 
 function ProductReviewForm({ product }) {
   const { handleSubmit, ...formMethods } = useForm({

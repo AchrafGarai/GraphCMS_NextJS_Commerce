@@ -1,4 +1,4 @@
-import graphcmsClient, { gql } from '@/lib/graphcms-client'
+import graphcmsClient, { gql } from '@lib/graphcms-client'
 
 export const getOrderSessionIdQuery = gql`
   query OrderSessionIdQuery($id: String!) {

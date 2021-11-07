@@ -19,26 +19,26 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "paths": {
-      "@/lib/*": ["lib/*"],
-      "@/hooks/*": ["hooks/*"],
-      "@/graphql/*": ["graphql/*"],
+      "@lib/*": ["lib/*"],
+      "@hooks/*": ["hooks/*"],
+      "@graphql/*": ["graphql/*"],
       
-      "@/components/*": [
+      "@components/*": [
         "components/*"
       ],
-      "@/utils/*": [
+      "@utils/*": [
         "utils/*"
       ],
-      "@/context/*": [
+      "@context/*": [
         "context/*"
       ],
-      "@/icons/*": [
+      "@icons/*": [
         "components/icons/*"
       ], 
-      "@/svgs/*": [
+      "@svgs/*": [
         "components/svgs/*"
       ],
-      "@/ui/*": [
+      "@ui/*": [
         "components/ui/*"
       ]
     }

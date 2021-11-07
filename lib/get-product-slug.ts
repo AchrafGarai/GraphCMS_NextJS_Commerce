@@ -1,5 +1,5 @@
-import graphcmsClient, { gql } from '@/lib/graphcms-client'
-import { ProductFragment } from '@/lib/graphql-fragments'
+import graphcmsClient, { gql } from '@lib/graphcms-client'
+import { ProductFragment } from '@lib/graphql-fragments'
 
 export const getProductsSlugQuery = gql`
   query CollectionSlugQuery($locale: Locale!, $slug: String!) {

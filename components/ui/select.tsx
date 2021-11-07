@@ -3,7 +3,7 @@ import {
   forwardRef,
   SelectHTMLAttributes } from "react"
 
-import { ChevronDownSmallIcon } from "@/icons/index"
+import { ChevronDownSmall } from "@icons/index"
 
 export interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement>{
   field:string
@@ -55,7 +55,7 @@ const Select  = forwardRef<HTMLSelectElement, SelectProps>(
             ))}
           </select>
           <div className="pointer-events-none absolute inset-y-0 right-0 px-2 flex items-center">
-            <ChevronDownSmallIcon
+            <ChevronDownSmall
               className="h-4 w-4 text-gray-400"
               aria-hidden="true"
             />

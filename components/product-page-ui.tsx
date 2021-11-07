@@ -3,11 +3,11 @@ import { useRouter } from 'next/router'
 import Image from 'next/image'
 import { useCart } from 'react-use-cart'
 
-import Button from '@/ui/button'
-import ChevronDownSmall from '@/icons/chevron-down-small'
-import { formatCurrencyValue } from '@/utils/format-currency-value'
-import ProductReviews from '@/components/product-reviews'
-import { useSettingsContext } from '@/context/settings'
+import Button from '@ui/button'
+import ChevronDownSmall from '@icons/chevron-down-small'
+import { formatCurrencyValue } from '@utils/format-currency-value'
+import ProductReviews from '@components/product-reviews'
+import { useSettingsContext } from '@context/settings'
 
 function ProductPageUI({ product }) {
   const { addItem } = useCart()

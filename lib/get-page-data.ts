@@ -1,5 +1,5 @@
-import graphcmsClient, { gql } from '@/lib/graphcms-client'
-import { CategoryFragment, CollectionFragment } from '@/lib/graphql-fragments'
+import graphcmsClient, { gql } from '@lib/graphcms-client'
+import { CategoryFragment, CollectionFragment } from '@lib/graphql-fragments'
 
 export const getPageDataQuery = gql`
   query PageDataQuery($locale: Locale!) {

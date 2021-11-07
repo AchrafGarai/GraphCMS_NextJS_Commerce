@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
-import { GitHubIcon, TwitterIcon } from '@/icons/index'
-import { Select } from '@/ui/form'
+import { GitHubIcon, TwitterIcon } from '@icons/index'
+import { Select } from '@ui/form'
 import {currencies,locales} from 'graphcms.config'
-import { useSettingsContext } from '@/context/settings'
+import { useSettingsContext } from '@context/settings'
 
 function Footer({ categories = [], collections = [] }) {
   const router = useRouter()

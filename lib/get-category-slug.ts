@@ -1,5 +1,5 @@
-import graphcmsClient, { gql } from '@/lib/graphcms-client'
-import { CategoryFragment, ProductCardFragment } from '@/lib/graphql-fragments'
+import graphcmsClient, { gql } from '@lib/graphcms-client'
+import { CategoryFragment, ProductCardFragment } from '@lib/graphql-fragments'
 
 export const getCategorySlugQuery = gql`
   query CategorySlugQuery($locale: Locale!, $slug: String!) {

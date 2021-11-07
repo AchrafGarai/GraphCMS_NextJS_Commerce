@@ -1,5 +1,5 @@
-import graphcmsClient, { gql } from '@/lib/graphcms-client'
-import { ProductCardFragment } from '@/lib/graphql-fragments'
+import graphcmsClient, { gql } from '@lib/graphcms-client'
+import { ProductCardFragment } from '@lib/graphql-fragments'
 
 export const getAllProductsQuery = gql`
   query AllProductsQuery($locale: Locale!) {

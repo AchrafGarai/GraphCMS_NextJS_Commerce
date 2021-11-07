@@ -1,5 +1,5 @@
-import graphcmsMutationClient, { gql } from '@/lib/graphcms-mutation-client'
-import stripe from '@/lib/stripe-client'
+import graphcmsMutationClient, { gql } from '@lib/graphcms-mutation-client'
+import stripe from '@lib/stripe-client'
 
 export const createOrderMutation = gql`
   mutation CreateOrderMutation($order: OrderCreateInput!) {

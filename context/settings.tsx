@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { currencies } from 'graphcms.config'
-import useLocalStorage from '@/hooks/use-local-storage'
+import useLocalStorage from '@hooks/use-local-storage'
 
 const SettingsContext = React.createContext(null)
 
