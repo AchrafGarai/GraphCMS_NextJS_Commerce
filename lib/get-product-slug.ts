@@ -16,7 +16,7 @@ export const getProductsSlugQuery = gql`
   ${ProductFragment}
 `
 
-async function getProductBySlug({ locale = 'en', slug }) {
+async function getProductBySlug({ locale , slug }) {
   const {
     products: [product]
   } = await graphcmsClient.request(getProductsSlugQuery, {

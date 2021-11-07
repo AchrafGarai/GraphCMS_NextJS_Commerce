@@ -17,7 +17,7 @@ function CategoryPage({ category }) {
 
 export async function getStaticPaths({ locales }) {
   let paths = []
-
+  
   for (const locale of locales) {
     const { categories } = await getAllCategories({ locale })
 

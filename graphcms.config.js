@@ -1,5 +1,5 @@
-module.exports = {
-  locales: [
+
+const locales = [
     {
       value: 'en',
       label: 'English',
@@ -9,8 +9,8 @@ module.exports = {
       value: 'de',
       label: 'German'
     }
-  ],
-  currencies: [
+  ]
+  const  currencies = [
     {
       code: 'GBP',
       default: true
@@ -19,4 +19,4 @@ module.exports = {
       code: 'EUR'
     }
   ]
-}
+export  { locales , currencies }

@@ -7,6 +7,7 @@ function IndexPage({ products }) {
 }
 
 export async function getStaticProps({ locale }) {
+  console.log(locale)
   const pageData = await getPageData({ locale })
   const { products } = await getAllProducts({ locale })
 

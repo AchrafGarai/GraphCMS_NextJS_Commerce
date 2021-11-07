@@ -3,14 +3,14 @@ import Link from 'next/link'
 
 import { GitHubIcon, TwitterIcon } from '@/icons/index'
 import { Select } from '@/ui/form'
-import { currencies, locales } from 'graphcms.config'
+import {currencies,locales} from 'graphcms.config'
 import { useSettingsContext } from '@/context/settings'
 
 function Footer({ categories = [], collections = [] }) {
   const router = useRouter()
   const { activeCurrency, switchCurrency } = useSettingsContext()
 
-  const activeLocale = locales.find((locale) => locale.value === router.locale)
+  const activeLocale = locales.find((locale) => locale.value === router.locale) 
 
   const updateCurrency = (event) => {
     const currency = currencies.find(
@@ -95,6 +95,7 @@ function Footer({ categories = [], collections = [] }) {
                 label="Language"
                 onChange={updateLocale}
                 options={locales}
+                type="text"
               />
               <Select
                 className="w-full"
@@ -106,6 +107,7 @@ function Footer({ categories = [], collections = [] }) {
                   label: currency.code,
                   value: currency.code
                 }))}
+                type="text"
               />
             </form>
           </div>

@@ -47,7 +47,7 @@
     "next-env.d.js",
     "**/*.ts",
     "**/*.tsx"
-, "graphcms.config.ts"  ],
+, "graphcms.config.js", "next.config.js", "postcss.config.js", "lib/get-page-data.js"  ],
   "exclude": [
     "node_modules"
   ],
