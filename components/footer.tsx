@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
-import { GitHubIcon, TwitterIcon } from '@icons/index'
+import { GitHubIcon, TwitterIcon } from '@components/icons'
 import { Select } from '@ui/form'
 import {currencies,locales} from 'graphcms.config'
 import { useSettingsContext } from '@context/settings'

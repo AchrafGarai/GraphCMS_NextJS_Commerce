@@ -3,7 +3,7 @@ import {
   forwardRef,
   SelectHTMLAttributes } from "react"
 
-import { ChevronDownSmall } from "@icons/index"
+import { ChevronDownSmall } from "@components/icons"
 
 export interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement>{
   field:string

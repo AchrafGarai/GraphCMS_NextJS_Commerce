@@ -22,19 +22,18 @@
       "@lib/*": ["lib/*"],
       "@hooks/*": ["hooks/*"],
       "@graphql/*": ["graphql/*"],
+
       
       "@components/*": [
         "components/*"
       ],
+      "@icons/*": ["@components/icons/*"],
       "@utils/*": [
         "utils/*"
       ],
       "@context/*": [
         "context/*"
       ],
-      "@icons/*": [
-        "components/icons/*"
-      ], 
       "@svgs/*": [
         "components/svgs/*"
       ],

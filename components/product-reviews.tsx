@@ -2,7 +2,7 @@ import * as React from 'react'
 import useSWR from 'swr'
 import cc from 'classcat'
 
-import ChevronDownSmall from '@icons/chevron-down-small'
+import {ChevronDownSmall} from "@components/icons"
 import graphcmsClient from '@lib/graphcms-client'
 import { ProductReviewsQuery } from '@graphql/queries/reviews'
 import ProductReviewForm from '@components/product-review-form'

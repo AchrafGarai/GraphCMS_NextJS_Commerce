@@ -3,7 +3,7 @@ import { useCart } from 'react-use-cart'
 
 import { formatCurrencyValue } from '@utils/format-currency-value'
 import GraphCMSSVG from '@svgs/graphcms'
-import  ShoppingCart  from '@icons/shopping-cart'
+import  { ShoppingCart }  from '@components/icons'
 import { useSettingsContext } from '@context/settings'
 
 function Header({ pages = [] }) {
