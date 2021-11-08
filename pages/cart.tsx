@@ -5,16 +5,16 @@ import { useRouter } from 'next/router'
 import { useCart } from 'react-use-cart'
 import { loadStripe } from '@stripe/stripe-js'
 
-import Button from '@/components/ui/button'
+import Button from '@components/ui/button'
 import {
-  ChevronDownSmallIcon,
-  ChevronUpSmallIcon,
+  ChevronDownSmall,
+  ChevronUpSmall,
   XSmallIcon
-} from '@/components/icons'
-import { formatCurrencyValue } from '@/utils/format-currency-value'
-import getPageData from '@/lib/get-page-data'
-import SEO from '@/components/seo'
-import { useSettingsContext } from '@/context/settings'
+} from '@components/icons'
+import { formatCurrencyValue } from '@utils/format-currency-value'
+import getPageData from '@lib/get-page-data'
+import SEO from '@components/seo'
+import { useSettingsContext } from '@context/settings'
 import useSubmissionState from 'hooks/use-form-submission'
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
@@ -127,7 +127,7 @@ function Cart() {
                 onClick={() => incrementItemQuantity(item)}
                 disabled={submissionLoading}
               >
-                <ChevronUpSmallIcon className="h-4 w-4" />
+                <ChevronUpSmall className="h-4 w-4" />
               </button>
               <span className="mx-3 md:mx-6 p-1">{item.quantity}</span>
               <button
@@ -135,7 +135,7 @@ function Cart() {
                 onClick={() => decrementItemQuantity(item)}
                 disabled={submissionLoading}
               >
-                <ChevronDownSmallIcon className="h-4 w-4" />
+                <ChevronDownSmall className="h-4 w-4" />
               </button>
             </div>
             <div className="text-right md:w-1/5">

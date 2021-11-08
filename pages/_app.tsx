@@ -2,8 +2,8 @@ import { CartProvider } from 'react-use-cart'
 
 import 'tailwindcss/tailwind.css'
 
-import { SettingsProvider } from '@/context/settings'
-import Layout from '@/components/layout'
+import { SettingsProvider } from '@context/settings'
+import Layout from '@components/layout'
 
 function App({ Component, pageProps }) {
   return (

@@ -1,4 +1,4 @@
-import graphcmsMutationClient, { gql } from '@/lib/graphcms-mutation-client'
+import graphcmsMutationClient, { gql } from '@lib/graphcms-mutation-client'
 
 export default async (req, res) => {
   try {

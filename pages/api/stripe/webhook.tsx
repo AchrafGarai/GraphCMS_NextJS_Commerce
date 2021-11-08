@@ -1,5 +1,5 @@
-import createOrder from '@/lib/create-order'
-import stripeSigningSecret from '@/lib/stripe-signing-secret'
+import createOrder from '@lib/create-order'
+import stripeSigningSecret from '@lib/stripe-signing-secret'
 
 export const config = {
   api: {

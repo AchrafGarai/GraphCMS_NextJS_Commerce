@@ -1,4 +1,4 @@
-import stripe from '@/lib/stripe-client'
+import stripe from '@lib/stripe-client'
 
 const stripeSigningSecret = (handler) => async (req, res) => {
   const chunks = []

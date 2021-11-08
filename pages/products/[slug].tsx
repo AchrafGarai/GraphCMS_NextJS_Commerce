@@ -1,10 +1,9 @@
 import * as React from 'react'
-import getAllProducts from '@/lib/get-all-products'
-import getProductBySlug from '@/lib/get-product-slug'
-import getPageData from '@/lib/get-page-data'
-import ProductPageUI from '@/components/product-page-ui'
-import SEO from '@/components/seo'
-import {locales} from 'graphcms.config'
+import getAllProducts from '@lib/get-all-products'
+import getProductBySlug from '@lib/get-product-slug'
+import getPageData from '@lib/get-page-data'
+import ProductPageUI from '@components/product-page-ui'
+import SEO from '@components/seo'
 
 function ProductPage({ product }) {
   return (

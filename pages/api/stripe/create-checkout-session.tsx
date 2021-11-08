@@ -1,5 +1,5 @@
-import graphcmsClient, { gql } from '@/lib/graphcms-client'
-import stripe from '@/lib/stripe-client'
+import graphcmsClient, { gql } from '@lib/graphcms-client'
+import stripe from '@lib/stripe-client'
 
 export default async (req, res) => {
   try {

@@ -1,6 +1,6 @@
-import getAllProducts from '@/lib/get-all-products'
-import getPageData from '@/lib/get-page-data'
-import ProductGrid from '@/components/product-grid'
+import getAllProducts from '@lib/get-all-products'
+import getPageData from '@lib/get-page-data'
+import ProductGrid from '@components/product-grid'
 
 function IndexPage({ products }) {
   return <ProductGrid products={products} />
