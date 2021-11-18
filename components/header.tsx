@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useCart } from 'react-use-cart'
+import { useUI } from '@components/ui/context'
 
 import { formatCurrencyValue } from '@utils/format-currency-value'
 import GraphCMSSVG from '@svgs/graphcms'
@@ -9,6 +10,7 @@ import { useSettingsContext } from '@context/settings'
 function Header({ pages = [] }) {
   const { cartTotal } = useCart()
   const { activeCurrency } = useSettingsContext()
+  const { toggleSidebar } = useUI()
 
   return (
     <header className="max-w-7xl mx-auto bg-white flex-grow flex items-center justify-between px-4 sm:px-6">
@@ -36,7 +38,7 @@ function Header({ pages = [] }) {
             </ul>
           ) : null}
           <div className="flex items-center">
-            <Link href="/cart">
+            <button onClick={toggleSidebar}>
               <a className="flex space-x-2">
                 <ShoppingCart
                   className="h-6 w-6 text-gray-400"
@@ -49,7 +51,7 @@ function Header({ pages = [] }) {
                   })}
                 </span>
               </a>
-            </Link>
+            </button>
           </div>
         </nav>
       </div>

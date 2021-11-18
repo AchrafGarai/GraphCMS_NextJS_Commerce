@@ -1,5 +1,5 @@
 import { CartProvider } from 'react-use-cart'
-
+import { ManagedUIContext } from '@components/ui/context'
 import 'tailwindcss/tailwind.css'
 
 import { SettingsProvider } from '@context/settings'
@@ -9,9 +9,11 @@ function App({ Component, pageProps }) {
   return (
     <SettingsProvider>
       <CartProvider>
-        <Layout {...pageProps}>
-          <Component {...pageProps} />
-        </Layout>
+      <ManagedUIContext>
+          <Layout {...pageProps}>
+            <Component {...pageProps} />
+          </Layout>
+        </ManagedUIContext>
       </CartProvider>
     </SettingsProvider>
   )
