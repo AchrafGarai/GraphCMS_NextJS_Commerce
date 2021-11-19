@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { GitHubIcon, TwitterIcon } from '@components/icons'
+import { GitHubIcon, Cross } from '@components/icons'
 import cn from 'classnames'
 import s from './SidebarLayout.module.css'
 
@@ -23,7 +23,7 @@ const SidebarLayout: FC<ComponentProps> = ({
             aria-label="Close"
             className="hover:text-accent-5 transition ease-in-out duration-150 flex items-center focus:outline-none"
           >
-            <TwitterIcon className="h-6 w-6 hover:text-accent-3" />
+            <Cross className="h-6 w-6 hover:text-accent-3" />
             <span className="ml-2 text-accent-7 text-sm ">Close</span>
           </button>
         )}
@@ -33,7 +33,7 @@ const SidebarLayout: FC<ComponentProps> = ({
             aria-label="Go back"
             className="hover:text-accent-5 transition ease-in-out duration-150 flex items-center focus:outline-none"
           >
-            <TwitterIcon className="h-6 w-6 hover:text-accent-3" />
+            <Cross className="h-6 w-6 hover:text-accent-3" />
             <span className="ml-2 text-accent-7 text-xs">Back</span>
           </button>
         )}
