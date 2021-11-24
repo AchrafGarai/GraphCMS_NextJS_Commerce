@@ -29,7 +29,7 @@ function Footer({ categories = [], collections = [] }) {
   const currentYear = new Date().getUTCFullYear()
 
   return (
-    <footer className="bg-white" aria-labelledby="footerHeading">
+    <footer aria-labelledby="footerHeading">
       <h2 id="footerHeading" className="sr-only">
         Footer
       </h2>
@@ -50,7 +50,7 @@ function Footer({ categories = [], collections = [] }) {
                             category.slug
                           }`}
                         >
-                          <a className="text-base text-gray-500 hover:text-gray-900">
+                          <a className="text-base text-gray-500 hover:text-gray-400">
                             {category.name}
                           </a>
                         </Link>
@@ -72,7 +72,7 @@ function Footer({ categories = [], collections = [] }) {
                             collection.slug
                           }`}
                         >
-                          <a className="text-base text-gray-500 hover:text-gray-900">
+                          <a className="text-base text-gray-500 hover:text-gray-400">
                             {collection.name}
                           </a>
                         </Link>
@@ -112,7 +112,7 @@ function Footer({ categories = [], collections = [] }) {
             </form>
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">
+        <div className="mt-8 border-t border-gray-500 border-opacity-10 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
             <Link href="https://twitter.com/graphcms">
               <a className="text-gray-400 hover:text-gray-500">
