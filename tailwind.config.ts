@@ -14,5 +14,12 @@ module.exports = {
       },
     },
   },
-  darkMode: 'class',
+ darkMode:'media',
+  variants: {
+    extend: {
+      backgroundColor: ['dark'],
+      textColor: ['dark']
+    },
+  }
+  
 }

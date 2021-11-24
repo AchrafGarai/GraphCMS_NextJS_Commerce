@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useCart } from 'react-use-cart'
 
 import Button from '@ui/button'
+import { Select } from '@components/ui'
 import {ChevronDownSmall} from '@components/icons'
 import { formatCurrencyValue } from '@utils/format-currency-value'
 import ProductReviews from '@components/product-reviews'
@@ -96,19 +97,19 @@ function ProductPageUI({ product }) {
                 Style
               </label>
               <div className="relative">
-                <select
-                  id="style"
-                  name="style"
-                  value={activeVariantId}
-                  className="block appearance-none w-full bg-gainsboro border-2 border-gainsboro focus:border-slategray px-4 py-3 pr-8 focus:outline-none focus:bg-white text-slategray focus:text-slategray rounded-lg"
+                <Select
+                  className="w-full"
                   onChange={updateVariant}
+                  field="Options"
+                  label="Options"
+                  type="text"
+                  defaultValue={activeVariant.name}
+                  options={product.variants.map((variant) => ({
+                    label: variant.name,
+                    value: variant.id
+                  }))}
                 >
-                  {product.variants.map((variant) => (
-                    <option key={variant.id} value={variant.id}>
-                      {variant.name}
-                    </option>
-                  ))}
-                </select>
+                </Select>
                 <div className="pointer-events-none absolute inset-y-0 right-0 px-2 flex items-center">
                   <ChevronDownSmall
                     className="h-4 w-4 text-gray-400"
