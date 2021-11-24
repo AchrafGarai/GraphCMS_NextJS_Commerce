@@ -19,4 +19,19 @@ const locales = [
       code: 'EUR'
     }
   ]
-export  { locales , currencies }
+  const  options = [
+    {
+      value: '1',
+      default: true
+    },
+    {
+      value: '2',
+    },
+    {
+      value: '3',
+    },
+    {
+      value: '4',
+    }
+  ]
+export  { locales , currencies, options }

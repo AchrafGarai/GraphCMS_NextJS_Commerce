@@ -2,6 +2,7 @@ import * as React from 'react'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import { useCart } from 'react-use-cart'
+import {options} from 'graphcms.config'
 
 import Button from '@ui/button'
 import { Select } from '@components/ui'
@@ -127,23 +128,20 @@ function ProductPageUI({ product }) {
               Quantity
             </label>
             <div className="relative">
-              <select
-                id="quantity"
-                name="quantity"
-                value={variantQuantity}
-                className="block appearance-none w-full bg-gainsboro border-2 border-gainsboro focus:border-slategray px-4 py-3 pr-8 focus:outline-none focus:bg-white text-slategray focus:text-slategray rounded-lg"
+              <Select
+                field="quantity"
+                label="quantity"
+                type="text"
+                defaultValue={variantQuantity}
+                className="w-full"
                 onChange={updateQuantity}
-              >
-                {Array.from({ length: 5 }, (_, i) => {
-                  const value = Number(i + 1)
+                options={options.map((option) => ({
+                  label: option.value,
+                  value: option.value
+                }))}
 
-                  return (
-                    <option key={value} value={value}>
-                      {value}
-                    </option>
-                  )
-                })}
-              </select>
+              >
+              </Select>
               <div className="pointer-events-none absolute inset-y-0 right-0 px-2 flex items-center">
                 <ChevronDownSmall
                   className="h-4 w-4 text-gray-400"

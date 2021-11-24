@@ -11,7 +11,7 @@ export interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement>{
   type:string
   label:string
   options: any
-  defaultValue:string
+  defaultValue:string | number
 }
 
 const Select  = forwardRef<HTMLSelectElement, SelectProps>(
@@ -41,7 +41,7 @@ const Select  = forwardRef<HTMLSelectElement, SelectProps>(
             name={field}
             disabled={disabled}
             defaultValue={defaultValue}
-            className="appearance-none block w-full bg-none bg-white bg-opacity-10 border border-gray-500 border-opacity-10 rounded-md py-2 pl-3 pr-10  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            className="appearance-none block w-full bg-none  border border-gray-500 border-opacity-10 rounded-md py-2 pl-3 pr-10  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
             ref={ref}
             {...props}
           >
