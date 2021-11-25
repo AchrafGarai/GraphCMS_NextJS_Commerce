@@ -1,6 +1,6 @@
 import { CartProvider } from 'react-use-cart'
 import { ManagedUIContext } from '@components/ui/context'
-import '../styles/global.css'
+import '../assets/global.css'
 
 import { SettingsProvider } from '@context/settings'
 import Layout from '@components/layout'
