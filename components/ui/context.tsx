@@ -211,7 +211,7 @@ export const useUI = () => {
 
 export const ManagedUIContext: FC = ({ children }) => (
   <UIProvider>
-    <ThemeProvider attribute="class">
+    <ThemeProvider>
       {children}
     </ThemeProvider>
   </UIProvider>
