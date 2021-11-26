@@ -13,7 +13,7 @@ function ProductCard({ id, images, name, price, slug }) {
     <article key={id}>
       <Link href={`/products/${slug}`}>
         <a className="group no-underline w-full h-full flex">
-          <div className="rounded-lg cursor-pointer w-full overflow-hidden relative px-3 py-6 md:px-6">
+          <div className="bg-gray-500 bg-opacity-5 border border-gray-500 border-opacity-20 cursor-pointer w-full overflow-hidden relative px-3 py-6 md:px-6">
             {primaryImage ? (
               <Image
                 src={primaryImage.url}

@@ -21,10 +21,10 @@ function ProductReviews({ product }) {
     <div className="pt-6">
       <div className="border-b-2 pb-4">
         <button
-          className="text-lg text-left w-full flex justify-between items-start text-gray-400"
+          className="text-lg text-left w-full flex justify-between items-start"
           onClick={toggleExpanded}
         >
-          <span className="font-medium text-gray-900">
+          <span className="font-medium">
             Reviews{' '}
             {data && (
               <React.Fragment>({data.reviews.aggregate.count})</React.Fragment>
@@ -50,17 +50,17 @@ function ProductReviews({ product }) {
               {data.reviews.edges.map(({ node: review }) => (
                 <div key={review.id} className="first:pt-0 pt-4 space-y-4">
                   <div>
-                    <p className="text-lg leading-6 font-medium text-gray-900">
+                    <p className="text-lg leading-6 font-medium">
                       {review.headline}
                     </p>
-                    <p className="text-sm leading-6 text-gray-500">
+                    <p className="text-sm leading-6">
                       {review.name} &mdash;{' '}
                       {new Intl.DateTimeFormat('en-US', {
                         dateStyle: 'medium'
                       }).format(new Date(review.createdAt))}
                     </p>
                   </div>
-                  <p className="leading-5 text-gray-900">{review.content}</p>
+                  <p className="leading-5">{review.content}</p>
                 </div>
               ))}
             </div>
