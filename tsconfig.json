@@ -19,15 +19,21 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "paths": {
-      "@lib/*": ["lib/*"],
-      "@hooks/*": ["hooks/*"],
-      "@graphql/*": ["graphql/*"],
-
-      
+      "@lib/*": [
+        "lib/*"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ],
+      "@graphql/*": [
+        "graphql/*"
+      ],
       "@components/*": [
         "components/*"
       ],
-      "@icons/*": ["@components/icons/*"],
+      "@icons/*": [
+        "@components/icons/*"
+      ],
       "@utils/*": [
         "utils/*"
       ],
@@ -40,14 +46,19 @@
       "@ui/*": [
         "components/ui/*"
       ]
-    }
+    },
+    "incremental": true
   },
   "include": [
     "next-env.d.js",
     "**/*.ts",
-    "**/*.tsx"
-, "graphcms.config.js", "next.config.js", "postcss.config.js", "lib/get-page-data.js"  ],
+    "**/*.tsx",
+    "graphcms.config.js",
+    "next.config.js",
+    "postcss.config.js",
+    "lib/get-page-data.js"
+  ],
   "exclude": [
     "node_modules"
-  ],
+  ]
 }

@@ -3,8 +3,8 @@ import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 
-import Button from '@ui/button'
-import Form from '@ui/form'
+import {Button} from '@components/ui'
+import {Form} from '@components/ui'
 import { ProductReviewsQuery } from '@graphql/queries/reviews'
 
 function ProductReviewForm({ product }) {

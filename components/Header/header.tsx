@@ -13,7 +13,7 @@ function Header({ pages = [] }) {
   const { toggleSidebar } = useUI()
 
   return (
-    <header className="max-w-7xl mx-auto flex-grow flex items-center justify-between px-4 sm:px-6">
+    <header className="max-w-8xl mb-12 mx-auto flex-grow flex items-center justify-between px-8 sm:px-6">
       <div className="py-6 w-full">
         <nav className="flex items-center justify-between flex-wrap space-x-4">
           <Link href="/">

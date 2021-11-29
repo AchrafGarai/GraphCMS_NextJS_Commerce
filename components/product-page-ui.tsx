@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useCart } from 'react-use-cart'
 import {options} from 'graphcms.config'
 
-import Button from '@ui/button'
+import {Button} from '@components/ui'
 import { Select } from '@components/ui'
 import {ChevronDownSmall} from '@components/icons'
 import { formatCurrencyValue } from '@utils/format-currency-value'

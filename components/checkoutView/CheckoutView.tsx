@@ -9,7 +9,7 @@ import { useRouter } from 'next/router'
 import { useCart } from 'react-use-cart'
 import { loadStripe } from '@stripe/stripe-js'
 
-import Button from '@components/ui/button'
+import { Button } from '@components/ui'
 import {
   ChevronDownSmall,
   ChevronUpSmall,
