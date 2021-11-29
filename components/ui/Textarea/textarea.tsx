@@ -1,3 +1,5 @@
+import s from './TextArea.module.css'
+import cn from 'classnames'
 import { 
     forwardRef,
     TextareaHTMLAttributes 
@@ -32,7 +34,7 @@ const Textarea = forwardRef<HTMLTextAreaElement,TeaxtareaProps>(
                 disabled={disabled}
                 placeholder={placeholder}
                 rows={rows}
-                className="appearance-none min-w-0 w-full bg-white bg-opacity-10 border border-gray-300 border-opacity-10 py-2 px-4 text-base rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 "
+                className={cn(s.root)}
                 ref={ref}
               />
               {children}
