@@ -1,5 +1,6 @@
 import { Ref,forwardRef,HTMLInputTypeAttribute,InputHTMLAttributes,ReactNode } from "react"
-
+import s from './input.module.css'
+import cn from 'classnames'
 export interface InputProps extends InputHTMLAttributes<HTMLInputTypeAttribute>{
   field:string
   className:string
@@ -26,7 +27,7 @@ const Input  = forwardRef<HTMLInputElement, InputProps>(
           type={type}
           disabled={disabled}
           placeholder={placeholder}
-          className="appearance-none min-w-0 w-full bg-white bg-opacity-10 border border-gray-300 border-opacity-10 py-2 px-4 text-base rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400"
+          className={cn(s.root)}
           ref={ref}
         />
         {children}

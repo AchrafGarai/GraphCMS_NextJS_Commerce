@@ -1,3 +1,5 @@
+import s from './Select.module.css'
+import cn from 'classnames'
 import { 
   Ref,
   forwardRef,
@@ -41,7 +43,7 @@ const Select  = forwardRef<HTMLSelectElement, SelectProps>(
             name={field}
             disabled={disabled}
             defaultValue={defaultValue}
-            className="appearance-none block w-full bg-gray-500 bg-opacity-20 border border-gray-500 border-opacity-10 rounded-md py-2 pl-3 pr-10  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            className={cn(s.root)}
             ref={ref}
             {...props}
           >

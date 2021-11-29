@@ -58,12 +58,12 @@ function ProductReviewForm({ product }) {
       methods={formMethods}
       onSubmit={handleSubmit(onSubmit)}
     >
-      <Form.Input field="headline" />
+      <Form.Input field="headline" placeholder="Headline"/>
       <div className="grid gap-4 md:grid-cols-2">
-        <Form.Input field="name" />
-        <Form.Input field="email" />
+        <Form.Input field="name" placeholder="Name"/>
+        <Form.Input field="email" placeholder="e-mail"/>
       </div>
-      <Form.Textarea field="content" />
+      <Form.Textarea field="content" placeholder="Your review"/>
       <Button type="submit">Submit</Button>
     </Form>
   )

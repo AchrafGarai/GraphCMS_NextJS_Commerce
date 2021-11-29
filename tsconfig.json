@@ -19,6 +19,9 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "paths": {
+      "@/*": [
+        "./*"
+      ],
       "@lib/*": [
         "lib/*"
       ],
@@ -32,7 +35,7 @@
         "components/*"
       ],
       "@icons/*": [
-        "@components/icons/*"
+        "./components/icons/*"
       ],
       "@utils/*": [
         "utils/*"

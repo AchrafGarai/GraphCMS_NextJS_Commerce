@@ -1,0 +1,4 @@
+.root{
+    @apply appearance-none block w-full border border-gray-500 border-opacity-10 rounded-md py-2 pl-3 pr-10  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm;
+    background-color: var(--accent-1);
+}

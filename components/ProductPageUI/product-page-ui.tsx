@@ -8,7 +8,7 @@ import {Button} from '@components/ui'
 import { Select } from '@components/ui'
 import {ChevronDownSmall} from '@components/icons'
 import { formatCurrencyValue } from '@utils/format-currency-value'
-import ProductReviews from '@components/product-reviews'
+import {ProductReviews} from '@/components'
 import { useSettingsContext } from '@context/settings'
 
 function ProductPageUI({ product }) {

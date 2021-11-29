@@ -65,4 +65,3 @@ Form.Textarea = FormTextarea
 
 export default Form
 
-export { Input, Select, Textarea }

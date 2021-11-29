@@ -2,10 +2,8 @@ import React, { FC }  from 'react'
 import { DefaultSeo } from 'next-seo'
 import { useUI } from '@components/ui/context'
 import { defaultSeo } from 'next-seo.config'
-import Footer from '@components/footer'
-import Header from '@components/header'
-import Sidebar from '@components/ui/Sidebar'
-import Modal from '@components/ui/Modal'
+import {Footer, Header} from '@/components'
+import {Sidebar,Modal} from '@components/ui'
 import CheckoutView from '@components/checkoutView'
 
 

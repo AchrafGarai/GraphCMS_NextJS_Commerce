@@ -5,7 +5,7 @@ import cc from 'classcat'
 import {ChevronDownSmall} from "@components/icons"
 import graphcmsClient from '@lib/graphcms-client'
 import { ProductReviewsQuery } from '@graphql/queries/reviews'
-import ProductReviewForm from '@components/product-review-form'
+import {ProductReviewForm} from '@/components'
 
 function ProductReviews({ product }) {
   const [isExpanded, setIsExpanded] = React.useState(true)
@@ -19,7 +19,7 @@ function ProductReviews({ product }) {
 
   return (
     <div className="pt-6">
-      <div className="border-b-2 pb-4">
+      <div className="border-b-2 border-opacity-10 pb-4">
         <button
           className="text-lg text-left w-full flex justify-between items-start"
           onClick={toggleExpanded}
