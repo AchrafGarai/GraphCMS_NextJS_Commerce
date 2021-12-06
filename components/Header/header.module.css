@@ -1,0 +1,11 @@
+
+.root{
+    @apply mb-12 mx-auto flex-grow flex items-center justify-between px-8 sm:px-6;
+    border: 1px solid;
+    border-color: var(--accent-1);
+    
+}
+
+.nav{
+    @apply flex items-center justify-between flex-wrap space-x-4;
+}
