@@ -5,7 +5,7 @@ import cc from 'classcat'
 import {ChevronDownSmall} from "@components/icons"
 import graphcmsClient from '@lib/graphcms-client'
 import { ProductReviewsQuery } from '@graphql/queries/reviews'
-import {ProductReviewForm} from '@/components'
+import {ProductReviewForm, ReviewCard} from '@/components'
 
 function ProductReviews({ product }) {
   const [isExpanded, setIsExpanded] = React.useState(true)
@@ -48,20 +48,13 @@ function ProductReviews({ product }) {
           ) : data.reviews.aggregate.count ? (
             <div className="divide-y-2 space-y-4">
               {data.reviews.edges.map(({ node: review }) => (
-                <div key={review.id} className="first:pt-0 pt-4 space-y-4">
-                  <div>
-                    <p className="text-lg leading-6 font-medium">
-                      {review.headline}
-                    </p>
-                    <p className="text-sm leading-6">
-                      {review.name} &mdash;{' '}
-                      {new Intl.DateTimeFormat('en-US', {
-                        dateStyle: 'medium'
-                      }).format(new Date(review.createdAt))}
-                    </p>
-                  </div>
-                  <p className="leading-5">{review.content}</p>
-                </div>
+                 <ReviewCard 
+                    key={review.id} 
+                    headline={review.headline} 
+                    name={review.name} 
+                    date={review.createdAt}
+                    content={review.content}
+                 />
               ))}
             </div>
           ) : (
