@@ -1,5 +1,8 @@
 import { FC } from 'react'
 
+import s from './ReviewCard.module.css'
+import cn from 'classnames'
+
 interface ContainerProps {
     className?: string
     children?: any
@@ -19,19 +22,19 @@ interface ContainerProps {
   }) => {
     return (
         <div className={className}>
-               <div className="first:pt-0 pt-4 space-y-4">
+               <div className={cn(s.root)}>
                   <div>
-                    <p className="text-lg leading-6 font-medium">
+                    <p className={cn(s.headline)}>
                       {headline}
                     </p>
-                    <p className="text-sm leading-6">
+                    <p className={cn(s.headline)}>
                       {name} &mdash;{' '}
                       {new Intl.DateTimeFormat('en-US', {
                         dateStyle: 'medium'
                       }).format(new Date(date))}
                     </p>
                   </div>
-                  <p className="leading-5">{content}</p>
+                  <p className={cn(s.content)}>{content}</p>
               </div>
         </div>
     )
