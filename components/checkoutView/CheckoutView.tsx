@@ -106,7 +106,7 @@ import useSubmissionState from 'hooks/use-form-submission'
                {items.map((item) => {
                   return (
                      <div
-                        className="bg-gray-100 bg-opacity-5 md:rounded-lg flex items-center py-3 md:py-6 md:px-6 md:mb-3"
+                        className="border-2  border-opacity-10 md:rounded-lg flex items-center py-3 md:py-6 md:px-6 md:mb-3"
                         key={item.id}
                      >
                         <div className="w-3/5 flex flex-grow items-center">
