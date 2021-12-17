@@ -1,0 +1,18 @@
+.root{
+    @apply mt-12 mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8;
+    
+}
+
+.nav_wrapper{
+    @apply pb-8 xl:grid xl:grid-cols-5 xl:gap-8;
+}
+
+.Label{
+    @apply text-sm font-semibold tracking-wider uppercase;
+    color:var(--accent-9)
+}
+
+.link {
+    @apply text-base hover:text-gray-400 ;
+    color:var(--accent-5);
+}
