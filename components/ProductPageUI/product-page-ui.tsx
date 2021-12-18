@@ -7,6 +7,10 @@ import {options} from 'graphcms.config'
 import {Button} from '@components/ui'
 import { Select } from '@components/ui'
 import {ChevronDownSmall} from '@components/icons'
+import s from './product-page-ui.module.css'
+import cn from 'classnames'
+
+
 import { formatCurrencyValue } from '@utils/format-currency-value'
 import {ProductReviews} from '@/components'
 import { useSettingsContext } from '@context/settings'
@@ -74,28 +78,29 @@ function ProductPageUI({ product }) {
         </div>
       </div>
       <div className="px-6 md:py-3 lg:w-1/2">
-        <h1 className="font-bold text-3xl md:text-6xl mb-3 text-primary leading-tight">
-          {product.name}
-        </h1>
         <div className="mb-6">
-          <p className="font-semibold text-2xl text-slategray">
+          <p className={cn(s.price)}>
             {formatCurrencyValue({
               currency: activeCurrency,
               value: product.price
             })}
           </p>
         </div>
-        <div className="mb-6">
-          <p className="leading-loose text-lightgray">{product.description}</p>
+        <h1 className={cn(s.title)}>
+          {product.name}
+        </h1>
+
+        <div className="mb-16">
+          <p className={cn(s.description)}>{product.description}</p>
         </div>
         <div className="md:flex md:flex-wrap -mx-3">
           {product.variants.length > 1 ? (
             <div className="md:w-3/4 px-3 mb-6">
               <label
-                className="block text-sm font-bold tracking-widest uppercase mb-2 text-slategray"
+                className={cn(s.label)}
                 htmlFor="style"
               >
-                Style
+                Size
               </label>
               <div className="relative">
                 <Select
@@ -122,7 +127,7 @@ function ProductPageUI({ product }) {
           ) : null}
           <div className="md:w-1/4 px-3 mb-6">
             <label
-              className="block text-sm font-bold tracking-widest uppercase mb-2 text-slategray"
+              className={cn(s.label)}
               htmlFor="quantity"
             >
               Quantity

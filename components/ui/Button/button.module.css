@@ -1,8 +1,12 @@
 .root{
-    @apply px-4 py-3 rounded-md text-sm tracking-wide uppercase focus:outline-none;
+    @apply border-2 px-4 py-3 rounded-md text-sm tracking-wide uppercase focus:outline-none;
     background:  var(--accent-9);
-    color:  var(--accent-0)
+    color:  var(--accent-0);
+    font-weight: bold;
+    transition: all ease 200ms;
 }
+
 .root:hover {
     background:  var(--accent-7);
+    border: 2px solid var(--violet);
 }

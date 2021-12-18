@@ -1,0 +1,21 @@
+.root{
+    @apply text-2xl ;
+}
+
+.price{
+    @apply  text-xl ;
+    color: var(--accent-5)
+}
+
+.title{
+    @apply text-3xl md:text-6xl mb-3 leading-tight ;
+}
+
+.description{
+    color: var(--accent-5)
+}
+
+.label {
+    @apply block text-sm font-bold tracking-widest uppercase mb-2;
+}
+

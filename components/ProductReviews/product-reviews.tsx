@@ -18,10 +18,10 @@ function ProductReviews({ product }) {
   const toggleExpanded = () => setIsExpanded((expanded) => !expanded)
 
   return (
-    <div className="pt-6">
+    <div className="mt-12 pt-6">
       <div className="border-b-2 border-opacity-10 pb-4">
         <button
-          className="text-lg text-left w-full flex justify-between items-start"
+          className="text-left w-full flex justify-between items-start"
           onClick={toggleExpanded}
         >
           <span className="font-medium">

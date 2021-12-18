@@ -6,6 +6,7 @@ import s from './header.module.css'
 import cn from 'classnames'
 
 import { formatCurrencyValue } from '@utils/format-currency-value'
+import { Logo } from '@components/common/Logo'
 import GraphCMSSVG from '@svgs/graphcms'
 import  { ShoppingCart }  from '@components/icons'
 import { useSettingsContext } from '@context/settings'
@@ -22,7 +23,7 @@ function Header({ pages = [] }) {
         <nav className={cn(s.nav)}>
           <Link href="/">
             <a>
-              <GraphCMSSVG className="h-auto text-primary w-5" />
+              <Logo className="h-2 text-primary w-5"></Logo>
             </a>
           </Link>
           {pages.length ? (

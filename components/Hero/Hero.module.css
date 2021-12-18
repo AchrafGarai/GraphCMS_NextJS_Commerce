@@ -1,0 +1,41 @@
+.root{
+    position: relative;
+    height: 60vh;
+}
+.hero_wrapper{
+    @apply my-16 py-16 flex flex-col justify-center items-center gap-12;
+}
+.title{
+    @apply text-9xl text-center tracking-tighter uppercase mb-3;
+    font-size: 218px;
+    line-height: 104.19%;
+}
+.subtitle{
+    color: var(--accent-5);
+}
+
+.hero_img{
+    @apply absolute w-full flex justify-center items-center;
+    top: 35%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    animation: fadeIn 500ms;
+    transition: all ease-out;
+}
+@media only screen and (max-width: 1280px) {
+    .title {
+        font-size: 144px;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 64px;
+    }
+  }
+ 
+
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  

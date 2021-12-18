@@ -26,7 +26,7 @@ function ProductCard({ id, images, name, price, slug }) {
               />
             ) : null}
 
-            <div className="pt-3 md:pt-6">
+            <div className=" mt-8 flex flex-row justify-between items-center gap-4 pt-3 md:pt-6">
               <p className={cn(s.title)}>
                 {name}
               </p>

@@ -1,8 +1,9 @@
 import { ProductCard } from '@/components'
-
+import s from './product-grid.module.css'
+import cn from 'classNames'
 function ProductGrid({ products }) {
   return (
-    <div className="gap-8 grid sm:grid-cols-2 lg:grid-cols-3">
+    <div className={cn(s.root)}>
       {products.map(ProductCard)}
     </div>
   )

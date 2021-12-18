@@ -1,5 +1,5 @@
 .root{
-    @apply mt-12 mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8;
+    @apply max-w-7xl mt-12 mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8;
     
 }
 

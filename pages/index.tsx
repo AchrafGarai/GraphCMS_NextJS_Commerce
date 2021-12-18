@@ -1,9 +1,14 @@
 import getAllProducts from '@lib/get-all-products'
 import getPageData from '@lib/get-page-data'
-import {ProductGrid} from '@/components'
+import {ProductGrid, Hero} from '@/components'
 
 function IndexPage({ products }) {
-  return <ProductGrid products={products} />
+  return(
+    <div>
+      <Hero product={products[0]}></Hero>
+      <ProductGrid products={products} />
+    </div>
+  ) 
 }
 
 export async function getStaticProps({ locale }) {

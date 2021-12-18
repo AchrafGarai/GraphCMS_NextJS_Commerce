@@ -1,6 +1,7 @@
 .root{
     @apply p-4 space-y-4 border-2 rounded-md;
-    border-color: var(--accent-1);
+    border-color: var(--accent-2);
+    background: var(--accent-1);
 }
 .headline{
     @apply leading-6 font-medium;
