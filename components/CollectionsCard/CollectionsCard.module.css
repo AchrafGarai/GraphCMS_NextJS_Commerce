@@ -1,0 +1,5 @@
+.root{
+    @apply border-2 px-4 py-3 rounded-md text-sm tracking-wide uppercase focus:outline-none;
+  
+}
+

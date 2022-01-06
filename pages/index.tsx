@@ -1,12 +1,13 @@
 import getAllProducts from '@lib/get-all-products'
 import getPageData from '@lib/get-page-data'
-import {ProductGrid, Hero} from '@/components'
+import {ProductGrid,CollectionsList, Hero} from '@/components'
 
-function IndexPage({ products }) {
+function IndexPage({ products, footer }) {
   return(
     <div>
       <Hero product={products[0]}></Hero>
       <ProductGrid products={products} />
+      <CollectionsList {...footer}/>
     </div>
   ) 
 }
