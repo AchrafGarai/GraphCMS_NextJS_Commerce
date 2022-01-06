@@ -1,6 +1,7 @@
 import s from './CollectionsList.module.css'
 import cn from 'classnames'
 import Link from 'next/link'
+import { CollectionsCard } from '@/components'
 const CollectionsList = ({ children,collections, ...props }) => {
   return (
     <div
@@ -8,18 +9,8 @@ const CollectionsList = ({ children,collections, ...props }) => {
       {...props}
     >
        <ul className="space-y-4">
-          {collections.map((col) => (
-            <li key={col.id}>
-              <Link
-                href={`/${col.type.toLowerCase()}/${
-                  col.slug
-                }`}
-              >
-                <a>
-                  {col.name}
-                </a>
-              </Link>
-            </li>
+          {collections.map( (collections) =>(
+            <CollectionsCard collection={collections}></CollectionsCard>        
           ))}
       </ul>
       {children}

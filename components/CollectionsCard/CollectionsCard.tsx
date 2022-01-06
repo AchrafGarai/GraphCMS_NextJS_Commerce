@@ -1,13 +1,20 @@
 import s from './CollectionsCard.module.css'
 import cn from 'classnames'
-const CollectionsCard = ({ children, ...props }) => {
+import Link from 'next/link'
+const CollectionsCard = ({ collection, children, ...props }) => {
   return (
-    <button
-      className={cn(s.root)}
-      {...props}
-    >
-      {children}
-    </button>
+      <li key={collection.id}>
+        <Link
+          href={`/${collection.type.toLowerCase()}/${
+            collection.slug
+          }`}
+        >
+          <a>
+            {collection.name}
+            {children}
+          </a>
+        </Link>
+      </li>
   )
 }
 
