@@ -1,7 +1,7 @@
 import s from './CollectionsCard.module.css'
 import cn from 'classnames'
 import Link from 'next/link'
-const CollectionsCard = ({ collection, children, ...props }) => {
+const CollectionsCard = ({ collection, ...props }) => {
   return (
       <li key={collection.id}>
         <Link
@@ -11,7 +11,6 @@ const CollectionsCard = ({ collection, children, ...props }) => {
         >
           <a>
             {collection.name}
-            {children}
           </a>
         </Link>
       </li>
