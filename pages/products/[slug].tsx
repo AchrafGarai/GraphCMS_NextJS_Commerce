@@ -4,12 +4,14 @@ import getProductBySlug from '@lib/get-product-slug'
 import getPageData from '@lib/get-page-data'
 import {ProductPageUI} from '@/components'
 import SEO from '@components/seo'
+import { CollectionsList } from '@/components'
 
-function ProductPage({ product }) {
+function ProductPage({ product,footer }) {
   return (
     <React.Fragment>
       <SEO title={product.name} {...product} />
       <ProductPageUI product={product} />
+      <CollectionsList {...footer}/>
     </React.Fragment>
   )
 }
