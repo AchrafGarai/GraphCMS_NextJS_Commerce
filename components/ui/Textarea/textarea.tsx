@@ -30,7 +30,6 @@ const Textarea = forwardRef<HTMLTextAreaElement,TeaxtareaProps>(
               <textarea
                 id={field}
                 name={field}
-                type={type}
                 disabled={disabled}
                 placeholder={placeholder}
                 rows={rows}
