@@ -1,0 +1,12 @@
+.root{
+    @apply p-4 space-y-4 border-2 rounded-md;
+    border-color: var(--accent-2);
+    background: var(--accent-1);
+}
+.headline{
+    @apply leading-6 font-medium;
+    color: var(--accent-9);
+}
+.content{
+    color: var(--accent-5);
+}

@@ -1,9 +1,9 @@
 import { CartProvider } from 'react-use-cart'
 import { ManagedUIContext } from '@components/ui/context'
-import 'tailwindcss/tailwind.css'
+import '../assets/global.css'
 
 import { SettingsProvider } from '@context/settings'
-import Layout from '@components/layout'
+import {Layout} from '@/components'
 
 function App({ Component, pageProps }) {
   return (

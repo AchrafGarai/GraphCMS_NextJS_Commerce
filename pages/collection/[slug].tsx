@@ -3,14 +3,16 @@ import * as React from 'react'
 import getAllCollections from '@lib/get-all-collections'
 import getCollectionBySlug from '@lib/get-collection-slug'
 import getPageData from '@lib/get-page-data'
-import ProductGrid from '@components/product-grid'
+import {ProductGrid, CollectionsList} from '@/components'
 import SEO from '@components/seo'
+import Link from 'next/link'
 
-function CollectionPage({ collection }) {
+function CollectionPage({ collection, footer }) {
   return (
     <React.Fragment>
       <SEO title={collection.name} {...collection} />
       <ProductGrid products={collection.products} />
+      <CollectionsList {...footer}/>
     </React.Fragment>
   )
 }

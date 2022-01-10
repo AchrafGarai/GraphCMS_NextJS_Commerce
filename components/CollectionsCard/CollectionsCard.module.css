@@ -1,0 +1,15 @@
+.root{
+    @apply flex flex-row items-center justify-between border-b-2 my-8 py-3 focus:outline-none;
+    border-color: var(--accent-2);
+}
+
+.link{
+    @apply py-8 text-3xl tracking-tighter uppercase lg:text-8xl focus:outline-none ;
+    color: var(--accent-7);
+    transition: all ease-out 150ms;
+}
+
+.link:hover{
+    @apply tracking-normal;
+    color: var(--accent-10);
+}

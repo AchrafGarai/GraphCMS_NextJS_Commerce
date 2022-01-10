@@ -5,6 +5,7 @@
   .sidebar {
     @apply h-full flex flex-col text-base shadow-xl overflow-y-auto overflow-x-hidden;
     -webkit-overflow-scrolling: touch !important;
+    background-color: var(--accent-1);
   }
   
   .backdrop {

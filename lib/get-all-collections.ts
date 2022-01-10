@@ -11,7 +11,7 @@ export const getAllCollectionsQuery = gql`
   ${CollectionFragment}
 `
 
-async function getAllCollections({ locale = 'en' } = {}) {
+async function getAllCollections({ locale = 'en-US' } = {}) {
   const { collections } = await graphcmsClient.request(getAllCollectionsQuery, {
     locale
   })

@@ -11,7 +11,7 @@ export const getAllCategoriesQuery = gql`
   ${CategoryFragment}
 `
 
-async function getAllCategories({ locale = 'en' } = {}) {
+async function getAllCategories({ locale = 'en-US' } = {}) {
   const { categories } = await graphcmsClient.request(getAllCategoriesQuery, {
     locale
   })

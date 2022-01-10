@@ -3,7 +3,7 @@ import * as React from 'react'
 import getAllCategories from '@lib/get-all-categories'
 import getCategoryBySlug from '@lib/get-category-slug'
 import getPageData from '@lib/get-page-data'
-import ProductGrid from '@components/product-grid'
+import {ProductGrid} from '@/components'
 import SEO from '@components/seo'
 
 function CategoryPage({ category }) {
