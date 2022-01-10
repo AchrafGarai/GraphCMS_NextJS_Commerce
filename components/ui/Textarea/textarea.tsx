@@ -20,7 +20,6 @@ const Textarea = forwardRef<HTMLTextAreaElement,TeaxtareaProps>(
         field,
         placeholder,
         rows = 4,
-        type = 'text',
         ...props
       },
       ref
