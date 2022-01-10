@@ -13,7 +13,7 @@ function Footer({ categories = [], collections = [] }) {
   const router = useRouter()
   const { activeCurrency, switchCurrency } = useSettingsContext()
 
-  const activeLocale = locales.find((locale) => locale.value === router.locale) 
+  const activeLocale = locales.find((locale) => locale.value === router.locale)
 
   const updateCurrency = (event) => {
     const currency = currencies.find(
@@ -117,7 +117,7 @@ function Footer({ categories = [], collections = [] }) {
         </div>
         <div className="mt-8 border-t border-gray-500 border-opacity-10 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
-            <Link href="https://github.com/GraphCMS">
+            <Link href="https://github.com/AchrafGarai/GraphCMS_NextJS_Commerce">
               <a className="text-white-400 hover:text-white-500">
                 <span className="sr-only">GitHub</span>
                 <GitHubIcon className="h-6 w-6" aria-hidden="true" />
