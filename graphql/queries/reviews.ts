@@ -1,4 +1,4 @@
-import { gql } from 'graphql-request'
+import { gql } from "graphql-request"
 
 const ProductReviewsQuery = gql`
   query ProductReviewsQuery($productId: ID!) {

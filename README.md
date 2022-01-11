@@ -1,12 +1,10 @@
-<h2 align="center">
-  graphcms-commerce-starter
-</h2>
+
 
 <p align="center">Build modern, SEO ready commerce storefronts with GraphCMS, Next.js, Stripe and Tailwind CSS</p>
 
 ## About
 
-This project is an example of how to build fully-functioning Next.js commerce storefront with GraphCMS and Stripe. View the demo on [https://commerce.withheadlesscms.com/](https://commerce.withheadlesscms.com/).
+This project is an example of how to build fully-functioning Next.js commerce storefront with GraphCMS and Stripe.
 
 ## Features
 

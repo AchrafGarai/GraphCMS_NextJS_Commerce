@@ -60,7 +60,7 @@
     "next.config.js",
     "postcss.config.js",
     "lib/get-page-data.js"
-  ],
+, "tailwind.config.js", "prettier.config.js"  ],
   "exclude": [
     "node_modules"
   ]
