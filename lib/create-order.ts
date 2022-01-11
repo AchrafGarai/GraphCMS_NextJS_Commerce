@@ -14,10 +14,10 @@ async function createOrder({ sessionId }) {
     customer,
     line_items,
     ...session
-  } = await stripe.checkout.sessions.retrieve(sessionId, {
+  } : any = await stripe.checkout.sessions.retrieve(sessionId, {
     expand: ['line_items.data.price.product', 'customer']
   })
-
+  
   return await graphcmsMutationClient.request(createOrderMutation, {
     order: {
       email: customer.email,
@@ -37,5 +37,13 @@ async function createOrder({ sessionId }) {
     }
   })
 }
+type a = {
+  A:string
+  B:number
+}
+type b = {
+  C:string
+  D:number
+} 
 
 export default createOrder
