@@ -1,13 +1,14 @@
-
-
 <p align="center">Build modern, SEO ready commerce storefronts with GraphCMS, Next.js, Stripe and Tailwind CSS</p>
 
 ## About
 
 This project is an example of how to build fully-functioning Next.js commerce storefront with GraphCMS and Stripe.
 
+![Next store image!](https://digitalpress.fra1.cdn.digitaloceanspaces.com/xglyao0/2022/01/Next-store.png "Next Store homepage")
+
 ## Features
 
+- Dark mode & Light mode
 - Fully localized product catalogue built with [GraphCMS localization](https://graphcms.com/content-localization) and [Next.js](https://nextjs.org/docs/advanced-features/i18n-routing).
 - Pre-rendered catalogue pages via [`getStaticProps`](https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation) and [`getStaticPaths`](https://nextjs.org/docs/basic-features/data-fetching#getstaticpaths-static-generation).
 - Dynamic client-side data fetching via [SWR](https://swr.vercel.app).
@@ -15,6 +16,7 @@ This project is an example of how to build fully-functioning Next.js commerce st
 - Hosted checkout and payment flow with [Stripe Checkout](https://stripe.com/docs/payments/checkout).
 - Use the [GraphCMS mutation API](https://graphcms.com/mutation-api) with [API Routes](https://nextjs.org/docs/api-routes/introduction) to create orders on successful checkout (via webhook).
 - Multiple currency support.
+
 
 ## Usage
 
@@ -78,3 +80,12 @@ module.exports = {
   ]
 }
 ```
+
+
+## Mext steps 
+1. [NextJs](https://nextjs.org/docs/getting-started "NextJs documentation")  
+2. [GraphCMS](https://graphcms.com/ "GraphCMS"). 
+
+## About me 
+See of my other projects on [Behance](https://www.behance.net/achrafgarai "Behance") & my website [Website](https://www.achrafgarai.com/ "Website")
+
